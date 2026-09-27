@@ -10,6 +10,7 @@ The objective is to predict math_score using:
 - Reading score
 - Writing score
 The project uses the Students Performance in Exams dataset and follows a reproducible machine learning workflow from raw data ingestion through model selection and serialization.
+
 Key Features
 - Exploratory Data Analysis using Pandas, Matplotlib, and Seaborn
 - Train/test data ingestion and splitting
@@ -26,6 +27,7 @@ Key Features
 - Custom exception handling
 - Application logging
 - Python package structure using setup.py
+
 Models
 The training pipeline evaluates:
 - Linear Regression
@@ -44,62 +46,7 @@ For example, the notebook reports:
 - Linear Regression — RMSE: 5.3940
 - Linear Regression — MAE: 4.2148
 Results can vary with library versions and model configuration.
-Project Structure
-MLProject1/
-│
-├── notebook/
-│   ├── EDA_studentPerformance.ipynb
-│   ├── ModelTraining.ipynb
-│   └── data/
-│       └── stud.csv
-│
-├── src/
-│   ├── components/
-│   │   ├── data_ingestion.py
-│   │   ├── data_transformation.py
-│   │   └── model_trainer.py
-│   │
-│   ├── pipeline/
-│   ├── exception.py
-│   ├── logger.py
-│   └── utils.py
-│
-├── requirements.txt
-├── setup.py
-└── README.md
-Workflow
-Raw Dataset
-     │
-     ▼
-Data Ingestion
-     │
-     ├── Raw data
-     ├── Train split
-     └── Test split
-     │
-     ▼
-Data Transformation
-     │
-     ├── Numerical pipeline
-     │   ├── Median imputation
-     │   └── Standard scaling
-     │
-     └── Categorical pipeline
-         ├── Most-frequent imputation
-         ├── One-hot encoding
-         └── Scaling
-     │
-     ▼
-Model Training
-     │
-     ├── Multiple regressors
-     ├── GridSearchCV
-     └── Model comparison
-     │
-     ▼
-Best Model
-     │
-     └── Serialized with Pickle
+
 Installation
 Clone the repository:
 git clone https://github.com/developrishu-cell/MLProject1.git
